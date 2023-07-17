@@ -1,0 +1,338 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo img {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+  animation: carousel-animation 9s linear infinite;
+}
+
+.escolha {
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.personagens {
+  height: 80vh;
+  width: 20vw;
+}
+
+.nojinho {
+  background-image: url(../img/1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.medo {
+  background-image: url(../img/2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.alegria {
+  background-image: url(../img/3.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tristeza {
+  background-image: url(../img/4.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.raiva {
+  background-image: url(../img/5.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container:hover :not(:hover) {
+  opacity: 0.5;
+  filter: saturate(0%);
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.name {
+  border-top: 0.50vh solid rgb(0, 0, 0);
+  border-right: 0.25vh solid rgb(0, 0, 0);
+  border-left: 0.25vh solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nojo-1 {
+  background-color: #34762C;
+  width: 20vw;
+  height: 4.5vh;
+}
+
+.medo-1 {
+  background-color: #6E328A;
+  width: 20vw;
+  height: 4.5vh;
+}
+
+.alegria-1 {
+  background-color: #F1D439;
+  width: 20vw;
+  height: 4.5vh;
+}
+
+.tristeza-1 {
+  background-color: #084A92;
+  width: 20vw;
+  height: 4.5vh;
+}
+
+.raiva-1 {
+  background-color: #E73825;
+  width: 20vw;
+  height: 4.5vh;
+}
+
+@media (max-width: 1200px) {
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .container {
+    display: flex;
+    width: 150vw;
+  }
+
+  .nojinho {
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .medo {
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .alegria {
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .tristeza {
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .raiva {
+    width: 30vw;
+    height: 85vh;
+  }
+
+  .names {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .container {
+    display: flex;
+    width: 175vw;
+  }
+
+  .nojinho {
+    width: 35vw;
+    height: 85vh;
+  }
+
+  .medo {
+    width: 35vw;
+    height: 85vh;
+  }
+
+  .alegria {
+    width: 35vw;
+    height: 85vh;
+  }
+
+  .tristeza {
+    width: 35vw;
+    height: 85vh;
+  }
+
+  .raiva {
+    width: 35vw;
+    height: 85vh;
+  }
+
+  .names {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .container {
+    display: flex;
+    width: 225vw;
+  }
+
+  .nojinho {
+    width: 45vw;
+    height: 85vh;
+  }
+
+  .medo {
+    width: 45vw;
+    height: 85vh;
+  }
+
+  .alegria {
+    width: 45vw;
+    height: 85vh;
+  }
+
+  .tristeza {
+    width: 45vw;
+    height: 85vh;
+  }
+
+  .raiva {
+    width: 45vw;
+    height: 85vh;
+  }
+
+  .names {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .container {
+    display: flex;
+    width: 325vw;
+  }
+
+  .nojinho {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .medo {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .alegria {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .tristeza {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .raiva {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .names {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .container {
+    display: flex;
+    width: 325vw;
+  }
+
+  .nojinho {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .medo {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .alegria {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .tristeza {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .raiva {
+    width: 65vw;
+    height: 85vh;
+  }
+
+  .names {
+    display: none;
+  }
+
+  .escolha {
+    font-size: 15px;
+  }
+}
